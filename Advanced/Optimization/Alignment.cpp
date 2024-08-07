@@ -1,8 +1,9 @@
 #include <iostream>
 
 // #################################### Class Data Layout ####################################
-// Notes:   To simply optimizing a Class/Struct, set the members from the largest data type
+// Notes:   To simply optimizing a program, set the variables and the members from the largest data type
 //           to the lowest data type.
+//          Alignment rules apply to all variables (global, static, local),  Class/Struct members, Arrays, etc...
 //          Alignment is in bytes what is the largest data type inside the Class/Struct.
 //          The size of the Class/Struct is a multiple of the alignment.
 

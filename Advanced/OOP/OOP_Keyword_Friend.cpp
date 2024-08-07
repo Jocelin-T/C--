@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-// #################################### Friends ####################################
+// #################################### Keyword: friend ####################################
 // Notes:   Friend can give access to private and protected members to a class or a function.
 //          This is a one way relationship.
 //          Friend keyword need to be avoided!
