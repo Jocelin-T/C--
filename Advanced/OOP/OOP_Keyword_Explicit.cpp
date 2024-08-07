@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-// #################################### Explicit ####################################
+// #################################### Keyword: Explicit ####################################
 // Notes:   Good pratice to stop the compiler to trunk data.
 
 class UDT{

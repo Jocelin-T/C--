@@ -28,7 +28,7 @@ int main(){
     std::cout << "boolean: " << sizeof(no.checkpoint) << " bytes\n";
     std::cout << "double: " << sizeof(no.points) << " bytes\n";
     std::cout << "float: " << sizeof(no.score) << " bytes\n";
-    std::cout << "short: " << sizeof(no.number_of_players) << " bytes\n";
+    std::cout << "short: " << sizeof(no.number_of_players) << " bytes\n\n";
     std::cout << "Alignment Not Optimized: : " << alignof(no) << "bytes\n";
     std::cout << "Total Not Optimized: " << sizeof(no) << " bytes\n\n";
 
