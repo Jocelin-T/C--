@@ -20,6 +20,7 @@ class Person{
     std::unique_ptr<pImplPerson> m_impl; // Modern ptr
 };
 
+
 // ******************* Source file (Hidden) *******************
 struct Person::pImplPerson{
     std::string m_name;
@@ -36,7 +37,7 @@ Person::Person(std::string s) {
 }
 
 Person::~Person(){
-    // delete m_impl; // NEEDED if raw ptr
+    // delete m_impl; // NEEDED for raw ptr
 }
 
 std::string Person::GetAttributes(){

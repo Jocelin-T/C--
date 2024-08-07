@@ -41,6 +41,5 @@ int main(){
     std::cout << j.m_x << "\n";
     std::cout << j.m_y << "\n";
 
-
     return 0;
 }
