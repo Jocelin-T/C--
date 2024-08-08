@@ -3,11 +3,12 @@
 // #################################### Template (Generics) ####################################
 // Notes:   Serve as a blueprint for the compiler to generate code for us.
 //          Avoid copy and paste.
+//          The operator "<>" are for template argument
 //          Don't work if function is after "main()", even with function declaration!
 
 // Template creation, only 1 data type is accepted here
 template <typename T> 
-T square(T x){
+T square(const T x){
     return x * x;
 }
 

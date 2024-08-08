@@ -14,6 +14,18 @@ void Foo(T1 x, T2 y){
     std::cout << y << "\n";
 }
 
+// **** Possibility to return type: **** //
+// "auto"
+template<typename T1, typename T2>
+auto Multiply1(const T1& a, const T2& b){
+    return a * b;
+}
+// "-> decltype()" still require "auto"
+template<typename T1, typename T2>
+auto Multiply2(const T1& a, const T2& b) -> decltype(a * b){
+    return a * b;
+}
+
 // This function template is like an array.
 // T => the data type (int, float, ...)
 // N => the number of loop (in this case)
@@ -30,6 +42,9 @@ int main(){
 
     Foo<int, float>(5, 3.14f);
     Foo2<int, 5>(3);
+
+    std::cout << Multiply1<float, int>(7.53f, 5) << "\n"; 
+    std::cout << Multiply2<float, int>(7.53f, 5) << "\n"; 
 
     return 0;
 }
