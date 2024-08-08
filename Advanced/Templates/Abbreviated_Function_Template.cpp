@@ -1,7 +1,8 @@
 #include <iostream>
 
-// #################################### Abbreviated Template Functions (Keyword: auto) ####################################
-// Notes:   Auto keyword will do the same for basic type as a simple type for math, like int, double, float
+// #################################### Abbreviated Functions Template (Keyword: auto) ####################################
+// Notes:   Auto keyword will do the same for basic type as a simple type for math, like int, double, float.
+//          Abbreviated function template NEED C++ 20 or more.
 
 
 // // auto wil do the same job here
