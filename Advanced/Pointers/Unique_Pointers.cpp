@@ -2,9 +2,9 @@
 #include <memory>
 
 // #################################### Unique Pointers ####################################
-// Notes:   Allocated on the Heap when using "std::make_unique"
-//          Cannot be share (no copies), but can be move
-//          Deleted at the end of the block scope {}
+// Notes:   Allocated on the Heap when using "std::make_unique".
+//          Cannot be share (no copies), but can be move.
+//          Deleted at the end of the block scope {}.
 
 
 class UDT{
