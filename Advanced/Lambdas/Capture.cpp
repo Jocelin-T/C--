@@ -15,7 +15,7 @@ int main(){
     int last_result_2{0};
 
     // Capture explicit variables by reference.
-    auto print_v = [&last_result, &last_result_2](int n){
+    auto print_v = [&last_result, &last_result_2](int n)->void{
         last_result_2 = last_result;
         last_result = n;
         std::cout << n << "\n"; 
@@ -29,14 +29,15 @@ int main(){
     };
 
     // Capture by copy won't work if there is a reassignment.
-    auto print_b = [last_result](int n){
+    auto print_b = [last_result](int n)->void{
         // last_result = n; // reassignment don't work
         std::cout << last_result << "\n"; // read-only work
         std::cout << n << "\n"; 
     };
 
-    // It will be possible with the keyword mutable after the params.
-    auto print_c = [last_result](int n) mutable{
+    // It will be possible with the keyword mutable after the params,
+    //  and before the return type.
+    auto print_c = [last_result](int n) mutable ->void{
         last_result = n;
         std::cout << n << "\n"; 
     };
