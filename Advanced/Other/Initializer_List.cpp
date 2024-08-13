@@ -28,7 +28,7 @@ struct UDT{
 
 int main(){
 
-    // // **** () {} **** //
+    // // **** = () {} **** //
     // int a = 4.3; // Will be trunk to 4
     // int b(4.3); // Will be trunk to 4
     // int c{4.3}; // Compile Error: NEED to be the correct type
