@@ -5,7 +5,7 @@
 
 
 // #################################### Capture in lambda function ####################################
-// Notes:   
+// Notes:   Capture is what is inside [], who are variable passed by copy or reference
 
 
 int main(){
@@ -28,7 +28,15 @@ int main(){
         std::cout << n << "\n"; 
     };
 
-    // Capture by copy won't work if there is a reassignment.
+    // Capture by the compiler by copy (use if lambda is simple).
+    // Need to be mutable if reassignment.
+    auto print_a2 = [=](int n)mutable->void{
+        last_result_2 = last_result;
+        last_result = n;
+        std::cout << n << "\n"; 
+    };
+
+    // Capture a copy won't work if there is a reassignment.
     auto print_b = [last_result](int n)->void{
         // last_result = n; // reassignment don't work
         std::cout << last_result << "\n"; // read-only work
@@ -37,7 +45,7 @@ int main(){
 
     // It will be possible with the keyword mutable after the params,
     //  and before the return type.
-    auto print_c = [last_result](int n) mutable ->void{
+    auto print_c = [&last_result](int n) mutable->void{
         last_result = n;
         std::cout << n << "\n"; 
     };
