@@ -33,8 +33,6 @@ class ParticleSystem{
 
 };
 
-
-
 int main(){
 
     ParticleSystem p;
