@@ -1,5 +1,4 @@
 #include <iostream> // Permet d'afficher ET prendre des données dans la console
-#include <string> // Permet d'utiliser le type "string"
 
 
 // #################################### Namespace ####################################
@@ -7,7 +6,7 @@
 
 // using namespace std;    // Utilisation à éviter!! Elle permet d'utiliser toute la librairie std
 // using std::cout;        // Mais plutôt comme ça afin de limiter
-// using std::string;      // le nombre d'utilisation de la librairie std
+// using std::string;      //  le nombre d'utilisation de la librairie std
 
 namespace first{
     int x = 1;
