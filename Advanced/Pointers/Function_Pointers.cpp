@@ -1,5 +1,5 @@
 #include <iostream>
-// #include <functional> // Needed for std::function
+#include <functional> // Needed for std::function
 
 // #################################### Function Pointers ####################################
 
@@ -18,11 +18,11 @@ int multiply(int x, int y){
 int main() {
     // **** Basic C++ ****//
     // function pointer for any functions who are composed of: type functionName(type, type);
-    int (*intOperator)(int, int);
+    // int (*intOperator)(int, int);
 
     // **** Modern C++ ****//
     // Function pointer with std::function (need #include <functional>)
-    // std::function<int(int, int)> intOperator;
+    std::function<int(int, int)> intOperator;
 
     // **** Typedef ****//
     // Function pointer with typedef (need a typedef before, can be in the header file)
