@@ -6,6 +6,11 @@
     //          Created from a class which acts as a Blue-Print
 
 // ****************************** Class ******************************
+struct Role{
+    std::string name{""};
+    int access{0};
+};
+
 class Human{
     public:
         // Attributes
@@ -26,6 +31,9 @@ class Human{
 }; // Don't forget ";" HERE
 
 int main(){
+    Role role_emp;
+    role_emp.access = 1;
+    role_emp.name = "Clownz";
     // creation of an Object
     Human human_1;
     // set the attributes of the object
