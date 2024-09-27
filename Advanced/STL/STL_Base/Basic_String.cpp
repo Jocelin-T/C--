@@ -2,16 +2,16 @@
 #include <string>
 
 // #################################### std::string ####################################
-// Notes:   std::string         => std::basic_string<char>
-//          std::string_literal => const char*
-//          NULL terminator     => "\0" (it's a zero), end a string
+// Notes:   std::string             => std::basic_string<char>
+//          std::string_literal     => const char*
+//          NULL terminating char   => "\0" (it's a zero), end a string
 
 
 int main(){
 
-    std::string s {"Ciao"};
+    std::string s {"Ciao"}; 
 
-    // Return the number of characters without the NULL terminator 
+    // Return the number of characters without the NULL terminating char 
     std::cout << s.size() << "\n";
 
     // Return the number of characters in the current allocated storage
@@ -31,6 +31,10 @@ int main(){
     // Return a pointer or the address of the String
     std::cout << &s << "\n"; // address
     std::cout << s.data() << "\n"; // pointer
+
+    // Return the index of the selected char
+    std::cout << s.find('a') << '\n';
+
 
 
     return 0;
