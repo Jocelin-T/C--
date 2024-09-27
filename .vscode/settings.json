@@ -47,5 +47,6 @@
     },
     "C_Cpp.errorSquiggles": "disabled",
     "code-runner.runInTerminal": true,
-    "code-runner.preserveFocus": false
+    "code-runner.preserveFocus": false,
+    "C_Cpp.default.compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe"
 }
