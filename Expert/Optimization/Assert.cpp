@@ -19,7 +19,7 @@ int main(){
     // when using static_assert, 
     //  variables or functions NEED to be constexpr
     constexpr int age_2 = -7;
-    static_assert(age_2 > 0, "static_assert: age is less than 0"); // will fail at compile time
+    // static_assert(age_2 > 0, "static_assert: age is less than 0"); // will fail at compile time
 
     constexpr int age_3 = 7;
     static_assert(age_3 > 0, "static_assert: age is less than 0"); // is correct
