@@ -5,7 +5,7 @@
 //          Abbreviated function template NEED C++ 20 or more.
 
 
-// // auto wil do the same job here
+// // auto will do the same job here
 // template <typename T> 
 // T Square(T x){
 //     return x * x;
