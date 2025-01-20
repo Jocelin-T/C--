@@ -14,12 +14,13 @@
 int main(){
 
     Context traffic_light;
-    
     traffic_light.handle();
     std::cout << '\n';
+    
     traffic_light.setState(std::make_unique<ConcreteStateA>());
     traffic_light.handle();
     std::cout << '\n';
+    
     traffic_light.setState(std::make_unique<ConcreteStateB>());
     traffic_light.handle();
     std::cout << '\n';
